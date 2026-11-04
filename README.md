@@ -8,14 +8,27 @@ LineageOS 22.2 Wi-Fi-only port.
 Empty scaffold. Blobs must be extracted from the stock ROM that matches the
 device's current firmware.
 
+## Stock ROM facts
+
+- Package: `20161226142336257.zip` → `update.zip`
+- Build: `ZTE_A2015V1.0.0B16_M` (Android 6.0.1, MMB29M)
+- `system/vendor` is about 233 MiB; HAL modules are in
+  `system/lib/hw` and `system/lib64/hw` (non-Treble layout).
+- Wi-Fi/BT firmware: `system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat`,
+  `system/etc/wifi/WCNSS_qcom_wlan_nv.bin`, `nvm_tlv*`, `rampatch_tlv*`.
+
 ## Extraction
 
 1. Get the stock ROM (fastboot package or flashable zip) for the exact build.
-2. Mount/extract `system.img` (and `vendor` if present).
+2. Extract `update.zip`; it contains a `system/` tree and `boot.img`.
 3. Run the device tree's `extract-files.py` against a device running the stock
    ROM, or copy the files listed in `proprietary-files.txt` manually.
 4. Fix up `a2015-vendor.mk` with the resulting `PRODUCT_COPY_FILES` /
    `PRODUCT_PACKAGES`.
+
+> Legal note: the blobs are ZTE/Qualcomm proprietary. Do not publish them in a
+> public repository without checking the redistribution terms; keep the vendor
+> repo private or extract locally.
 
 ## Wi-Fi-only scope
 
