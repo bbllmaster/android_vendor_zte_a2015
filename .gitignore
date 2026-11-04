@@ -4,3 +4,6 @@
 out/
 .vscode/
 *.swp
+
+# Proprietary blobs are extracted locally; do not publish them.
+proprietary/
