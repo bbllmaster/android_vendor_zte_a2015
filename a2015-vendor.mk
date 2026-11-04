@@ -7,17 +7,17 @@ PRODUCT_COPY_FILES += \
     vendor/zte/a2015/proprietary/system/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/zte/a2015/proprietary/system/etc/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     vendor/zte/a2015/proprietary/system/etc/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
-    vendor/zte/a2015/proprietary/system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat \
-    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/nvm_tlv.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_1.3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/nvm_tlv_1.3.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_2.1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/nvm_tlv_2.1.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_3.0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/nvm_tlv_3.0.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_3.2.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/nvm_tlv_3.2.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv.img:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/rampatch_tlv.img \
-    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_1.3.tlv:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/rampatch_tlv_1.3.tlv \
-    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_2.1.tlv:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/rampatch_tlv_2.1.tlv \
-    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/rampatch_tlv_3.0.tlv \
-    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/rampatch_tlv_3.2.tlv \
+    vendor/zte/a2015/proprietary/system/etc/firmware/wlan/qca_cld/WCNSS_cfg.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_cfg.dat \
+    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvm_tlv.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_1.3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvm_tlv_1.3.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_2.1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvm_tlv_2.1.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_3.0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvm_tlv_3.0.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/nvm_tlv_3.2.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/nvm_tlv_3.2.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv.img:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv.img \
+    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_1.3.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_1.3.tlv \
+    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_2.1.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_2.1.tlv \
+    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_3.0.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.0.tlv \
+    vendor/zte/a2015/proprietary/system/etc/firmware/rampatch_tlv_3.2.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/rampatch_tlv_3.2.tlv \
     vendor/zte/a2015/proprietary/system/etc/bluetooth/bt_stack.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_stack.conf \
     vendor/zte/a2015/proprietary/system/etc/bluetooth/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
     vendor/zte/a2015/proprietary/system/etc/bluetooth/auto_pair_devlist.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/auto_pair_devlist.conf \
@@ -33,10 +33,10 @@ PRODUCT_COPY_FILES += \
     vendor/zte/a2015/proprietary/system/vendor/lib64/libRSDriver_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libRSDriver_adreno.so \
     vendor/zte/a2015/proprietary/system/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/zte/a2015/proprietary/system/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
-    vendor/zte/a2015/proprietary/system/etc/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/a420_pfp.fw \
-    vendor/zte/a2015/proprietary/system/etc/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/a420_pm4.fw \
-    vendor/zte/a2015/proprietary/system/etc/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/leia_pfp_470.fw \
-    vendor/zte/a2015/proprietary/system/etc/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/leia_pm4_470.fw \
+    vendor/zte/a2015/proprietary/system/etc/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
+    vendor/zte/a2015/proprietary/system/etc/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
+    vendor/zte/a2015/proprietary/system/etc/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
+    vendor/zte/a2015/proprietary/system/etc/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
     vendor/zte/a2015/proprietary/system/lib/hw/audio.primary.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.msm8994.so \
     vendor/zte/a2015/proprietary/system/lib64/hw/audio.primary.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.msm8994.so \
     vendor/zte/a2015/proprietary/system/lib/hw/camera.msm8994.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/camera.msm8994.so \
@@ -69,11 +69,11 @@ PRODUCT_COPY_FILES += \
     vendor/zte/a2015/proprietary/system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     vendor/zte/a2015/proprietary/system/etc/acdbdata/MTP/MTP_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Headset_cal.acdb \
     vendor/zte/a2015/proprietary/system/etc/acdbdata/MTP/MTP_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/MTP/MTP_Handset_cal.acdb \
-    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_pram_wide.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/ak4961_pram_wide.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_pram_narrow.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/ak4961_pram_narrow.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hp.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/ak4961_cram_wide_hp.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hs.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/ak4961_cram_wide_hs.bin \
-    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hf.bin:$(TARGET_COPY_OUT_VENDOR)/etc/firmware/ak4961_cram_wide_hf.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_pram_wide.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4961_pram_wide.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_pram_narrow.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4961_pram_narrow.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4961_cram_wide_hp.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hs.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4961_cram_wide_hs.bin \
+    vendor/zte/a2015/proprietary/system/etc/firmware/ak4961_cram_wide_hf.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ak4961_cram_wide_hf.bin \
     vendor/zte/a2015/proprietary/system/bin/mm-qcamera-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/mm-qcamera-daemon \
     vendor/zte/a2015/proprietary/system/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
     vendor/zte/a2015/proprietary/system/vendor/lib/libmmcamera2_isp_modules.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_isp_modules.so \
